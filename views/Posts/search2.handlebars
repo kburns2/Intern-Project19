@@ -1,0 +1,42 @@
+{{!-- MULTIPLE RES INFORMATION PAGE --}}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Select Reservation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/search2.css">
+</head>
+
+<body>
+  <main>
+    {{#each idNum}}
+      <h1>Welcome {{this.name}}</h1>
+      <h2>Tap a reservation to check in</h2>
+
+      {{#each this.reservation}}
+
+        <form action="/CScreen" method="GET">
+          <label for= "tester"></label><br>
+          <input type=hidden id="tester" name="tester" value = {{this}}>
+          <button class="info" type="Submit">
+          <h3>{{../this.name}}</h3>
+          <h3>LAN Id: {{../this.lan_id}}</h3>
+          <h3>Badge Id: {{../this.id_badge}}</h3>
+          <h3>Reservation Id: {{this}}</h3>
+          </button>
+          <br>
+         </form>
+         <br>
+      {{/each}}
+
+      <div class = "sub">
+        <form action="/">
+        <br>
+          <button class = "cancel" type="Cancel">Cancel</button>
+        </form>
+      </div>
+
+    {{/each}}
+ </main>
+</body>

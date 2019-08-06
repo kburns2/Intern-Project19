@@ -1,0 +1,115 @@
+/* Used for Search */
+
+body {
+    background: linear-gradient(to right, #fdc830, #f37335); 
+}
+
+
+main {
+    text-align: center;
+}
+
+h1 { 
+    text-align: center;
+    font-style: bold;
+}
+
+.box {
+    background-color: antiquewhite;
+    border: 1px solid rgb(0, 0, 0);
+    width: 35%;
+    margin: 0px auto;
+}
+
+h3 {
+    padding: 5px;
+    text-align: center;
+} 
+
+h2 {
+    padding: 5px;
+    text-align: center;
+} 
+
+h3.not-found{
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+h3.not-found2{
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+body {
+    background: linear-gradient(to right, #fdc830, #f37335); 
+    height: 100%;
+}
+
+form{
+    display: inline-block;
+    text-align: center;
+    margin: 0px auto;
+}
+
+button.checkin {
+    background-color: rgb(52, 185, 63);
+    border: none;
+    color: rgb(0, 0, 0); 
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: center;
+    font-size: 35px;
+    margin: -15px 0px 70px;
+    cursor: pointer;
+    border-radius: 19px;
+    width: 200px;
+}
+
+button.cancel {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: rgb(0, 0, 0); 
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin: 0px auto;
+    cursor: pointer;
+    border-radius: 19px;
+    width: 200px;
+}
+
+.sub{
+  display: flex;
+  justify-content: center;
+}
+
+button.cancel2 {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: rgb(0, 0, 0); 
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 19px;
+    width: 200px;
+}
+
+footer {
+    position:relative;
+    font-size: 20px;
+    bottom:0;
+    height:60px;
+ }

@@ -1,0 +1,51 @@
+/* Used for check In Screen (CScreen) */
+
+body {
+    background: linear-gradient(to right, #fdc830, #f37335); 
+}
+
+h1 { 
+    font-style: bold;
+    font-size: 72px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h1.info { 
+    font-style: bold;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+p {
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+    text-align: center;
+}
+
+form { 
+    text-align: center;
+}
+
+button {
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 35px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 19px;
+    width: 200px;
+  }
+
+  footer {
+    position:absolute;
+    font-size: 20px;
+    bottom:0;
+    height:60px;
+ }

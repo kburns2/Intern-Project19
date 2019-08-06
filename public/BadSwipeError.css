@@ -1,0 +1,46 @@
+/* Used for Index and Errors */
+
+body {
+    background: linear-gradient(to right, #fdc830, #f37335); 
+}
+
+h1 { 
+    font-style: bold;
+    font-size: 72px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+p {
+    color: rgb(8, 8, 8);
+    font-size: 20px;
+    text-align: center;
+}
+
+form { 
+    text-align: center;
+}
+
+button {
+    background-color: rgb(63, 189, 168);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+.BadSwipe{
+    color: #ff0000;
+    font-style:bold;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+  footer {
+    position:absolute;
+    font-size: 20px;
+    bottom:0;
+    height:60px;
+ }

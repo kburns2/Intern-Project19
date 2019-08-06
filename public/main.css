@@ -1,0 +1,49 @@
+/* Used for Index and Errors */
+
+body {
+    background: linear-gradient(to right, #fdc830, #f37335); 
+}
+
+h1 { 
+    font-style: bolder;
+    font-size: 72px;
+    text-align: center;
+    color: black;
+}
+
+p.Swipe {
+    color: rgb(8, 8, 8);
+    font-size: 32px;
+    font-style: bolder;
+    text-align: center;
+}
+
+form { 
+    text-align: center;
+}
+
+button {
+    background-color: rgb(250, 79, 0);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    text-align: center;
+    border-radius: 50px;
+    font-size: 25px;  
+    margin-bottom: 10px;
+    
+}
+
+input{
+    height: 30px;
+    font-size: 18px;
+}
+
+
+
+  footer {
+    position:absolute;
+    font-size: 20px;
+    bottom:0;
+    height:60px;
+ }

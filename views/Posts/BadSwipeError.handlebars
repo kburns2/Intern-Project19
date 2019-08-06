@@ -1,0 +1,25 @@
+{{!-- Bad Swipe PAGE --}}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Check In </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/BadSwipeError.css">
+</head>
+
+<body>
+      <main>
+      <h1>Check In</h1>
+      <p>
+          Enter your Id Number
+      </p>
+      <form action="/search" method="GET">
+        <label for="idNum"></label><br>
+        <input type="text" id="idNum" name="idNum" />
+        <button type="Submit">Submit</button>
+      </form>
+      <p class = "BadSwipe">Bad Swipe, Please Try Again</p>
+    </main>
+</body>
+

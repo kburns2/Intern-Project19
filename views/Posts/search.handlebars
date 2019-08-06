@@ -1,0 +1,46 @@
+{{!-- ONE RES PAGE --}}
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Select Reservation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/public/search.css">
+</head>
+
+<body>
+  <main>
+  {{#if idNum}}
+      {{#each idNum}}
+      <h1>Welcome {{this.name}}</h1>
+      <h2>You have one reservation, press Check In to continue</h2>
+      <div class = "box">
+        <h3>{{this.name}}</h3>
+        <h3>LAN Id: {{this.lan_id}}</h3>
+        <h3>Badge Id: {{this.id_badge}}</h3>
+        <h3>Reservation Id: {{this.reservation}}</h3>
+      </div>
+
+      <div class = "sub">
+        <form action="/">
+          <button class = "cancel" type="Cancel">Cancel</button>
+        </form>
+
+      <form action="/CScreen" method="GET">
+        <label for="tester"></label><br>
+        <input type=hidden id="tester" name="tester" value = {{this.reservation}}>
+        <button class="checkin" type="Submit">Check In</button>
+      </form>
+
+      </div>
+      {{/each}}
+      
+  {{else}}
+    <h3 class="not-found">We're sorry, but no results were found for: {{idList}}.</h3>
+    <h3 class="not-found2"> If you believe this to be a mistake, contact *insert contact here*</h3>
+    <form action="/">
+      <button class = "cancel2" type="Cancel2">Cancel</button>
+    </form>
+  {{/if}}
+ </main>
+</body>
