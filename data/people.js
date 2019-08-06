@@ -2,7 +2,7 @@ const axios = require("axios");
 
 async function getInfoById(idNum){
      try{
-        const people = await axios.get('');
+        const people = await axios.get('https://raw.githubusercontent.com/kburns2/Intern-Project19/master/numbers.json');
         if (typeof(idNum) != "undefined"){ 
             let ln = 0;
             let list = [];
@@ -22,7 +22,7 @@ async function getInfoById(idNum){
 
 async function getReservationInfoByNumber(reservationid){
     try{
-        const reserv = await axios.get('');
+        const reserv = await axios.get('https://raw.githubusercontent.com/kburns2/Intern-Project19/master/reservations.json');
         if (typeof(reservationid) != "undefined"){ 
             let ln = 0;
             let list = [];
